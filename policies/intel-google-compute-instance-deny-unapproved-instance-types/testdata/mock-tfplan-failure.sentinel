@@ -1,0 +1,36 @@
+terraform_version = "1.3.5"
+
+resource_changes = {
+	"module.terraform-intel-gcp-vm.google_compute_instance.instance": {
+		"address": "module.terraform-intel-gcp-vm.google_compute_instance.instance",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"allow_stopping_for_update": null,
+				"attached_disk":             [],
+				"can_ip_forward":            false,
+				"deletion_protection":       false,
+				"description":               "Intel accelerated virtual machine.",
+				"desired_status":            "RUNNING",
+				"enable_display":            null,
+				"hostname":                  null,
+				"labels":                    null,
+				"machine_type":              "NOT-n2-standard-2",
+				"metadata":                  null,
+				"metadata_startup_script":   null,
+				"min_cpu_platform":          "Intel Ice Lake",
+				"name":                      "this-is-a-linux-vm",
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "module.terraform-intel-gcp-vm",
+		"name":           "instance",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_compute_instance",
+	},
+}

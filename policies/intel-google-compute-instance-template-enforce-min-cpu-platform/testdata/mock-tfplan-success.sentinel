@@ -1,0 +1,46 @@
+terraform_version = "1.3.5"
+
+resource_changes = {
+	"google_compute_instance_template.test": {
+		"address": "google_compute_instance_template.test",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"advanced_machine_features": [],
+				"can_ip_forward":            false,
+				"description":               null,
+				"disk": [
+					{
+						"auto_delete":                    true,
+						"boot":                           true,
+						"disk_encryption_key":            [],
+						"disk_name":                      null,
+						"labels":                         null,
+						"resource_policies":              null,
+						"source":                         null,
+						"source_image":                   "debian-cloud/debian-11",
+						"source_image_encryption_key":    [],
+						"source_snapshot":                null,
+						"source_snapshot_encryption_key": [],
+					},
+				],
+				"guest_accelerator":       [],
+				"instance_description":    null,
+				"labels":                  null,
+				"machine_type":            "n2-standard-2",
+				"metadata":                null,
+				"metadata_startup_script": null,
+				"min_cpu_platform":        "Intel Sapphire Rapids",
+			},
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "module.terraform-intel-gcp-vm",
+		"name":           "instance",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_compute_instance_template",
+	},
+}
