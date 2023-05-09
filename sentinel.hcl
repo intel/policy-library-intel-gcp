@@ -3,6 +3,10 @@ import "static" "approved" {
   format = "json"
 }
 
+import "module" "policy_summary" {
+  source = "./modules/policysummary.sentinel"
+}
+
 policy "intel-google-compute-instance-deny-unapproved-instance-types" {
   source = "./policies/intel-google-compute-instance-deny-unapproved-instance-types/intel-google-compute-instance-deny-unapproved-instance-types.sentinel"
   enforcement_level = "soft-mandatory"
