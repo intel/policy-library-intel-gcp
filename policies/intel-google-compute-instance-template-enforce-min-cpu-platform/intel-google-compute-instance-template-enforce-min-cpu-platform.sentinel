@@ -8,7 +8,7 @@ param valid_actions default [
 ]
 
 doc = {
-	"allowed":   ["Intel Cascade Lake", "Intel Ice Lake", "Intel Sapphire Rapids"],
+	"allowed":   ["Intel Ice Lake", "Intel Sapphire Rapids"],
 	"category":  "Infrastructure (IaaS)",
 	"error":     " is not an allowed min_cpu_platform type.",
 	"file_name": "intel-google-compute-instance-template-enforce-min-cpu-platform.sentinel",
