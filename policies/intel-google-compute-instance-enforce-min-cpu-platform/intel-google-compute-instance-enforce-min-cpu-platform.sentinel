@@ -8,7 +8,7 @@ param valid_actions default [
 ]
 
 doc = {
-	"allowed":   ["Intel Cascade Lake", "Intel Ice Lake", "Intel Sapphire Rapids"],
+	"allowed":   ["Intel Ice Lake", "Intel Sapphire Rapids"],
 	"category":  "Infrastructure (IaaS)",
 	"error":     " is not an allowed min_cpu_platform type.",
 	"file_name": "intel-google-compute-instance-enforce-min-cpu-platform.sentinel",
@@ -29,7 +29,7 @@ all_resources = filter tfplan.resource_changes as _, rc {
 
 // Filter resources that violate a given condition
 violators = filter all_resources as _, r {
-	r.change.after.min_cpu_platform not in doc.allowed
+	r.change.after.min_cpu_platform else [] not in doc.allowed
 }
 
 // Build a summary report
