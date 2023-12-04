@@ -8,7 +8,7 @@
 
 ## Sentinel Policies for Google Modules
 
-This library, provides prescriptive Sentinel policies that optimize Terraform deployed resources on Google Cloud Platform (GCP). The policies that are contained in this library are based on the latest performance and benchmarking tests that can be found at https://www.intel.com/content/www/us/en/developer/topic-technology/cloud/cloud-performance.html?f:@stm_10381_en=%5BGoogle%20Alphabet%3BGoogle%20Cloud%5D. Terraform Cloud and Enterprise users can use the policies in this library to enable intelligent developer decisions when deploying cloud infrastructure by choosing the best price for performance instance types for their cloud resources. 
+This library, provides prescriptive Sentinel policies that optimize Terraform deployed resources on Google Cloud Platform (GCP). The policies that are contained in this library are based on the latest [performance and benchmarking tests](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud/cloud-performance.html?f:@stm_10381_en=%5BGoogle%20Alphabet%3BGoogle%20Cloud%5D). Terraform Cloud and Enterprise users can use the policies in this library to enable intelligent developer decisions when deploying cloud infrastructure by choosing the best price for performance instance types for their cloud resources. 
 
 ## Getting Started
 
